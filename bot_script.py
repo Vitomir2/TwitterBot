@@ -1,13 +1,5 @@
 #!/usr/bin/python
-'''
-USE AT YOUR OWN PERIL <3
-fill in your API keys before running the script
-written in Python3 by Judith van Stegeren, @jd7h
-'''
-# import twitter #for docs, see https://python-twitter.readthedocs.io/en/latest/twitter.html
 import nltk
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('vader_lexicon')
 from nltk.sentiment import SentimentIntensityAnalyzer
 import tweepy
 import logging
@@ -23,16 +15,6 @@ nltk.download('vader_lexicon')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
-'''
-before running the script, do this:
-1. create a virtual environment
-$ python3 -m venv venv
-$ source venv/bin/activate
-2. install the dependencies
-$ pip install python-twitter
-3. obtain API keys from twitter
-4. fill them in in the script below
-'''
 sun_exposure_questions = [
     'On a hot summer day, do you find yourself laying all day in the sun or seeking shadow?',
     'Are you a morning person or a night owl?',
