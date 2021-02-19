@@ -69,15 +69,15 @@ def initialize_plants():
 
 def main():
     # Authenticate to Twitter
-    auth = tweepy.OAuthHandler("i43i0N9plzAa7wf4huwpxsvcN", "V7yAapEx33sxfR3HKTYYQVWlWdZA3acVVDynkXPau39BdK4V0M")
-    auth.set_access_token("1360611491611869184-0OfpGHTFo9JYA3ZIaqJIKMNFdmPzve", "r45sGkAn1Y6c4GZZjbuxnmBbEVJB2DolDXapNab2ZVfL4")
+    auth = tweepy.OAuthHandler("consumer_key", "consumer_secret")
+    auth.set_access_token("key", "secret")
 
     # Create API object
     api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
     while True:
         communicate(api)
         logger.info("Waiting...")
-        time.sleep(15)
+        time.sleep(30)
 
 
 # Method used to for the communication of the bot
