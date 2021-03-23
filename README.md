@@ -12,7 +12,7 @@ Before running the script, do this:
 3. Obtain API keys from twitter
 4. Fill them in in the script below
 
-# How to communicate with the both
+# How to communicate with the bot
 1. You need to tweet to the bot a text that includes the text 'match me'
 2. Then the bot will answer in 15 seconds with an questions that you need to answer
 3. You answer the question that the bot asked you
